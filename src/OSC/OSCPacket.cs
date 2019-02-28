@@ -153,7 +153,7 @@ namespace UnityOSC
 					break;
 
 				case "String":
-					data = Encoding.ASCII.GetBytes((string)valueObject);
+					data = Encoding.UTF8.GetBytes((string)valueObject);
 					break;
 
 				case "Byte[]":
